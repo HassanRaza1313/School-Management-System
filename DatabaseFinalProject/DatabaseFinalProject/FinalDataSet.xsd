@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinalDataSet" targetNamespace="http://tempuri.org/FinalDataSet.xsd" xmlns:mstns="http://tempuri.org/FinalDataSet.xsd" xmlns="http://tempuri.org/FinalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FinalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FinalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DatabaseFinalProject.Properties.Settings.GlobalReference.Default.FinalConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="marksTableAdapter" GeneratorDataComponentClassName="marksTableAdapter" Name="marks" UserDataComponentName="marksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FinalConnectionString (Settings)" DbObjectName="Final.dbo.marks" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT studentid, a1, a2, a3, a4, q1, q2, q3, q4, m1, m2, project, final FROM dbo.marks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="studentid" DataSetColumn="studentid" />
+              <Mapping SourceColumn="a1" DataSetColumn="a1" />
+              <Mapping SourceColumn="a2" DataSetColumn="a2" />
+              <Mapping SourceColumn="a3" DataSetColumn="a3" />
+              <Mapping SourceColumn="a4" DataSetColumn="a4" />
+              <Mapping SourceColumn="q1" DataSetColumn="q1" />
+              <Mapping SourceColumn="q2" DataSetColumn="q2" />
+              <Mapping SourceColumn="q3" DataSetColumn="q3" />
+              <Mapping SourceColumn="q4" DataSetColumn="q4" />
+              <Mapping SourceColumn="m1" DataSetColumn="m1" />
+              <Mapping SourceColumn="m2" DataSetColumn="m2" />
+              <Mapping SourceColumn="project" DataSetColumn="project" />
+              <Mapping SourceColumn="final" DataSetColumn="final" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FinalDataSet" msprop:Generator_UserDSName="FinalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="marks" msprop:Generator_TableClassName="marksDataTable" msprop:Generator_TableVarName="tablemarks" msprop:Generator_TablePropName="marks" msprop:Generator_RowDeletingName="marksRowDeleting" msprop:Generator_RowChangingName="marksRowChanging" msprop:Generator_RowEvHandlerName="marksRowChangeEventHandler" msprop:Generator_RowDeletedName="marksRowDeleted" msprop:Generator_UserTableName="marks" msprop:Generator_RowChangedName="marksRowChanged" msprop:Generator_RowEvArgName="marksRowChangeEvent" msprop:Generator_RowClassName="marksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="studentid" msprop:Generator_ColumnVarNameInTable="columnstudentid" msprop:Generator_ColumnPropNameInRow="studentid" msprop:Generator_ColumnPropNameInTable="studentidColumn" msprop:Generator_UserColumnName="studentid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="a1" msprop:Generator_ColumnVarNameInTable="columna1" msprop:Generator_ColumnPropNameInRow="a1" msprop:Generator_ColumnPropNameInTable="a1Column" msprop:Generator_UserColumnName="a1" type="xs:int" minOccurs="0" />
+              <xs:element name="a2" msprop:Generator_ColumnVarNameInTable="columna2" msprop:Generator_ColumnPropNameInRow="a2" msprop:Generator_ColumnPropNameInTable="a2Column" msprop:Generator_UserColumnName="a2" type="xs:int" minOccurs="0" />
+              <xs:element name="a3" msprop:Generator_ColumnVarNameInTable="columna3" msprop:Generator_ColumnPropNameInRow="a3" msprop:Generator_ColumnPropNameInTable="a3Column" msprop:Generator_UserColumnName="a3" type="xs:int" minOccurs="0" />
+              <xs:element name="a4" msprop:Generator_ColumnVarNameInTable="columna4" msprop:Generator_ColumnPropNameInRow="a4" msprop:Generator_ColumnPropNameInTable="a4Column" msprop:Generator_UserColumnName="a4" type="xs:int" minOccurs="0" />
+              <xs:element name="q1" msprop:Generator_ColumnVarNameInTable="columnq1" msprop:Generator_ColumnPropNameInRow="q1" msprop:Generator_ColumnPropNameInTable="q1Column" msprop:Generator_UserColumnName="q1" type="xs:int" minOccurs="0" />
+              <xs:element name="q2" msprop:Generator_ColumnVarNameInTable="columnq2" msprop:Generator_ColumnPropNameInRow="q2" msprop:Generator_ColumnPropNameInTable="q2Column" msprop:Generator_UserColumnName="q2" type="xs:int" minOccurs="0" />
+              <xs:element name="q3" msprop:Generator_ColumnVarNameInTable="columnq3" msprop:Generator_ColumnPropNameInRow="q3" msprop:Generator_ColumnPropNameInTable="q3Column" msprop:Generator_UserColumnName="q3" type="xs:int" minOccurs="0" />
+              <xs:element name="q4" msprop:Generator_ColumnVarNameInTable="columnq4" msprop:Generator_ColumnPropNameInRow="q4" msprop:Generator_ColumnPropNameInTable="q4Column" msprop:Generator_UserColumnName="q4" type="xs:int" minOccurs="0" />
+              <xs:element name="m1" msprop:Generator_ColumnVarNameInTable="columnm1" msprop:Generator_ColumnPropNameInRow="m1" msprop:Generator_ColumnPropNameInTable="m1Column" msprop:Generator_UserColumnName="m1" type="xs:int" minOccurs="0" />
+              <xs:element name="m2" msprop:Generator_ColumnVarNameInTable="columnm2" msprop:Generator_ColumnPropNameInRow="m2" msprop:Generator_ColumnPropNameInTable="m2Column" msprop:Generator_UserColumnName="m2" type="xs:int" minOccurs="0" />
+              <xs:element name="project" msprop:Generator_ColumnVarNameInTable="columnproject" msprop:Generator_ColumnPropNameInRow="project" msprop:Generator_ColumnPropNameInTable="projectColumn" msprop:Generator_UserColumnName="project" type="xs:int" minOccurs="0" />
+              <xs:element name="final" msprop:Generator_ColumnVarNameInTable="columnfinal" msprop:Generator_ColumnPropNameInRow="final" msprop:Generator_ColumnPropNameInTable="finalColumn" msprop:Generator_UserColumnName="final" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
